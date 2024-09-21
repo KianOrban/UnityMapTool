@@ -1,0 +1,32 @@
+MAP TOOL DOCUMENTATION
+[General]
+The tool should automatically instantiate the camera and anchor prefabs if needed. Otherwise, the prefabs can be added manually to the scene. 
+
+When entering playmode, the window will turn dark, waiting to render until the playmode session ends.
+
+[Camera Control]
+Cam Movement: Move the mouse while holding the mouse wheel button
+
+Cam Height: Adjust height with mouse scroll wheel
+
+Cam Rotation: (y-Axis) Move the mouse while holding right mouse button
+
+Camera slope angle: (x-Axis) can be changed in the settings menu.
+
+[Hotkeys]
+SpaceBar:			Toggle main settings panel
+
+F:					Snap camera view to a selected FocusObject
+
+Mouse left click:	Teleport a selected FocusObject if it shares the player tag. Cannot be undone.
+
+Left-Alt:			hold to enter a precision mode, that user a fraction of normal camera speeds to enable fine positioning (indicated by target 
+					icon in header of tool window)
+
+L:					Toggle a lock state, preventing any(!) other keyboard input to the tool (indicated by lock icon in header of tool window)
+
+N:					Create a camera anchor at the current camera position, guarantees same camera positioning over sessions (requires confirmation)
+
+Del:				Delete all camera anchors in the current scene (requires confirmation) Cannot be undone.
+
+O:					Toggle Orthographic camera mode 
